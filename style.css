@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-section {
+  height: 100vh;
+  background-color: #f0e5c8;
+}
+.form-box {
+  display: flex;
+  justify-content: center;
+  background-color: #f0e5c8;
+}
+
+form {
+  width: 50%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex-direction: column;
+  border: 3px solid #ff5733;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: #ffd700;
+  /* align-items: center; */
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  form {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  form{
+    margin-bottom: 50px;
+    
+  }
+}
+
+@media (max-width: 767px) {
+  form{
+    margin-bottom: 50px;
+  }
+ select{
+  width: 260px;
+ }
+}
+
+
+label,h3,
+select {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+#question5Input{
+  background-color: transparent;
+  padding: 5px 50px;
+  border: 1px solid #e6a63f;
+  border-radius: 10px;
+
+}
+h3{
+  color: rgb(241, 99, 99);
+  text-transform: capitalize;
+}
+
+label {
+  font-size: 16px;
+  color: #333333;
+}
+
+select {
+  background-color: transparent;
+  border: 1px solid #e6a63f;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+option {
+  background-color: transparent;
+}
+.submitBtn {
+  padding: 10px 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 14px;
+  background-color: #ff5733;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+
+/*
+Name, Age and Gender, Province
+*/
+
+.user-info{
+  background-color: transparent;
+  border: 1px solid #e6a63f;
+  border-radius: 10px;
+  padding: 6px 10px;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input:focus{
+  outline: none;
+}
+
+.hide{
+  visibility: hidden;
+}
+
+.show{
+  visibility: visible;
+}
