@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "videshg1_ImpactSurvey";
-$password = "123Sahani1419@";
-$database = "videshg1_ImpactSurvey";
+$username = "username";
+$password = "password";
+$database = "databaseName";
 $name = $_POST['name'];
 $age = $_POST['age'];
 $province = $_POST['province'];
