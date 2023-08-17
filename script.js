@@ -3,6 +3,7 @@ let name = document.getElementById('name');
 let age = document.getElementById('age');
 let province = document.getElementById('province');
 let gender = document.getElementsByClassName('gender');
+let email = document.getElementById('email');
 let question1 = document.getElementById('question1');
 let question2 = document.getElementById('question2');
 let question3 = document.getElementById('question3');
@@ -21,6 +22,8 @@ if(name.value == ""){
   alert('Please enter your age');
 } else if(province.value==""){
   alert('Please enter your province');
+} else if(email.value == ""){
+  alert("Please enter your email");
 }
 
 //questions validation

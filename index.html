@@ -4,21 +4,31 @@
 <head>
   <!--CSS-->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="common.css">
   <!--CSS End-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Impact of digital technology on traditional markets and local businesses</title>
+  <title>Impact of digital technology on traditional markets and local businesses In Thailand</title>
 </head>
 
 <body>
+<!--Menu section start-->
+  <section class="menu">
+    <div class="menu-div">
+      <button class="link menu-btn" ><a href="/" class="link">Take Survey</a></button>
+      <button class="link menu-btn"><a href="/checkAnswer.html" class="link">Check Your Answers</a></button>
+    </div>
+  </section>
+<!--Menu section end -->
 
+  <!--Form Start-->
   <section class="form-section">
 
     <div class="form-box">
-<!--Form Start-->
+
       <form id="form" action="database.php" method="post">
         <h3>Impact of digital technology on traditional markets and local businesses</h3>
-<!--Personal Info Inputs-->
+        <!--Personal Info Inputs-->
         <label>
           <b>Name:</b>
           <input type="text" placeholder="Name here.." class="user-info" required value="" id="name" name="name">
@@ -28,14 +38,6 @@
         <label>
           <b>Age:</b>
           <input type="text" placeholder="Age here.." class="user-info" required value="" id="age" name="age">
-        </label>
-
-        <br><br>
-
-        <label>
-          <b>Province:</b>
-          <input type="text" placeholder="Province here.." class="user-info" required value="" id="province"
-            name="province">
         </label>
 
         <br><br>
@@ -55,9 +57,26 @@
             <input type="radio" name="gender" value="o" class="gender">
           </label>
         </label>
+        
         <br><br>
 
-<!--Question Inputs-->
+        <label>
+          <b>Email:</b>
+          <input type="email" placeholder="Email here.." class="user-info" required value="" id="email"
+            name="email">
+        </label>
+
+        <br><br>
+
+        <label>
+          <b>Province:</b>
+          <input type="text" placeholder="Province here.." class="user-info" required value="" id="province"
+            name="province">
+        </label>
+
+        <br><br>
+
+        <!--Question Inputs-->
         <label for="">1. How frequently do you use digital platforms (websites, apps, social media) for shopping or
           accessing
           services instead of visiting traditional markets or local businesses?<br>
@@ -73,7 +92,8 @@
 
         <br><br>
         <label for="">2. What factors influence your decision to use digital platforms over traditional markets or local
-          businesses? (Select all that apply) <br>
+          businesses?  <br>
+          <!-- (Select all that apply) -->
           <select name="question2" id="question2" required>
             <option value="select" selected>Select</option>
             <option value="Very frequently">Very frequently</option>
@@ -85,9 +105,7 @@
         </label>
 
         <br><br>
-        <label for="">3. In your opinion, how has the growth of digital technology affected traditional markets and
-          local
-          businesses in Thailand?<br>
+        <label for="">3. In your opinion, how has the growth of digital technology affected traditional markets and local businesses in Thailand?<br>
           <select name="question3" id="question3" required>
             <option value="select" selected>Select</option>
             <option value="Positively - Increased customer reach and revenue">Positively - Increased customer reach and
@@ -101,9 +119,7 @@
         </label>
 
         <br><br>
-        <label for="">4. Have you noticed any efforts by traditional markets or local businesses to adapt to the digital
-          age,
-          such as creating online stores or utilizing social media for promotion?<br>
+        <label for="">4. Have you noticed any efforts by traditional markets or local businesses to adapt to the digital age, such as creating online stores or utilizing social media for promotion?<br>
           <select name="question4" id="question4" required>
             <option value="select" selected>Select</option>
             <option value="Yes, many have adapted">Yes, many have adapted</option>
@@ -115,7 +131,7 @@
         </label>
 
         <br><br>
-        <label for="">5.If you could suggest one way for traditional markets or local businesses to thrive in the
+        <label for="">5. If you could suggest one way for traditional markets or local businesses to thrive in the
           digital
           era,
           what would it be? <br>
@@ -141,13 +157,14 @@
             </option>
 
           </select><br>
-          <input type="text" name="question5_input" value="" id="question5Input" class="hide" placeholder="your suggestion here...">
+          <input type="text" name="question5_input" value="" id="question5Input" class="hide"
+            placeholder="your suggestion here...">
         </label>
 
         <br><br>
         <button type="submit" class="submitBtn" id="submitBtn">Submit Answers</button>
       </form>
-<!--Form End-->
+      <!--Form End-->
     </div>
   </section>
 
